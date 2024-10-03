@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Empleados</title>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+
+        {% for Empleado in mostrar_empleados %}
+
+            <empleado>
+                <dni>DNI: {{Empleado.dni}}</dni><br>
+                <nombre>Nombre: {{Empleado.nombre}}</nombre><br>
+                <edad>Edad: {{Empleado.edad}}</edad><br>
+                
+            </empleado><br>
+        {% endfor %}
+</body>
+</html>

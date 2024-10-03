@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Revistas</title>
+</head>
+<body>
+    <h1>Lista de Revistas</h1>
+
+        {% for Revista in mostrar_revistas %}
+
+            <revista>
+                <empresa>Empresa: {{Revista.empresa}}</empresa><br>
+                <periodicidad>Periodicidad: {{Revista.tipo_lanzamiento}}</periodicidad><br>
+                <fechaPub>Última publicación: {{Revista.fecha_publicacion}}</fechaPub><br>
+            </revista><br>
+        {% endfor %}
+</body>
+</html>
